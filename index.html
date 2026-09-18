@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ICONO DE LA PÁGINA -->
+    <link rel="icon" type="image/png"
+        href="file:///C:/Users/kesaria/Desktop/FirstJsProject/ChatGPT%20Image%20Sep%2018,%202026,%2011_48_41%20PM.png">
+
+    <title>Zviad Jajanidze | Instalador de Pladur</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            color: #222;
+        }
+
+        header {
+            background: #202020;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header h2 {
+            color: #f5b400;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .hero {
+            min-height: 600px;
+            background:
+                linear-gradient(
+                    rgba(0, 0, 0, 0.7),
+                    rgba(0, 0, 0, 0.7)
+                ),
+                url("foto-pladur.jpg");
+
+            background-size: cover;
+            background-position: center;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            text-align: center;
+            color: white;
+            padding: 30px;
+        }
+
+        .hero-content {
+            max-width: 850px;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #f5b400;
+        }
+
+        .hero p {
+            font-size: 21px;
+            margin-bottom: 30px;
+        }
+
+        .boton {
+            display: inline-block;
+            background: #f5b400;
+            color: #222;
+            text-decoration: none;
+            padding: 15px 30px;
+            margin: 5px;
+            border-radius: 7px;
+            font-weight: bold;
+            font-size: 17px;
+        }
+
+        section {
+            padding: 70px 8%;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 34px;
+            margin-bottom: 40px;
+        }
+
+        .sobre {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+            font-size: 19px;
+            line-height: 1.7;
+        }
+
+        .datos {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .dato {
+            background: white;
+            padding: 25px;
+            width: 250px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+        }
+
+        .dato .icono {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        .servicios {
+            display: grid;
+            grid-template-columns: repeat(
+                auto-fit,
+                minmax(220px, 1fr)
+            );
+            gap: 20px;
+        }
+
+        .servicio {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+        }
+
+        .servicio .icono {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .servicio h3 {
+            margin-bottom: 10px;
+        }
+
+        .equipo {
+            background: #eaeaea;
+            text-align: center;
+        }
+
+        .equipo p {
+            max-width: 800px;
+            margin: auto;
+            font-size: 19px;
+            line-height: 1.7;
+        }
+
+        .contacto {
+            background: #202020;
+            color: white;
+            text-align: center;
+        }
+
+        .contacto h2 {
+            color: #f5b400;
+        }
+
+        .contacto p {
+            font-size: 19px;
+            margin-bottom: 25px;
+        }
+
+        .ventajas {
+            max-width: 700px;
+            margin: auto;
+            text-align: left;
+            font-size: 18px;
+            line-height: 2;
+        }
+
+        footer {
+            background: #111;
+            color: #aaa;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 700px) {
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 7px;
+                font-size: 14px;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- CABECERA -->
+
+    <header>
+
+        <h2>🔨 Zviad Jajanidze</h2>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+    </header>
+
+
+    <!-- INICIO -->
+
+    <section class="hero" id="inicio">
+
+        <div class="hero-content">
+
+            <h1>
+                Zviad Jajanidze
+                <br>
+                <span>Instalador de Pladur</span>
+            </h1>
+
+            <p>
+                Instalador de pladur autónomo con bastante experiencia,
+                disponible para trabajos en toda Cataluña.
+            </p>
+
+            <a class="boton" href="#contacto">
+                📞 Solicitar presupuesto
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- SOBRE MÍ -->
+
+    <section id="sobre-mi">
+
+        <h2>Sobre mí</h2>
+
+        <div class="sobre">
+
+            <p>
+                Soy <strong>Zviad Jajanidze</strong>, instalador de
+                pladur autónomo en Cataluña.
+            </p>
+
+            <br>
+
+            <p>
+                Tengo bastante experiencia realizando trabajos de
+                instalación de pladur y puedo trabajar tanto de forma
+                individual como con un equipo.
+            </p>
+
+            <br>
+
+            <p>
+                Me adapto a las necesidades de cada proyecto y,
+                cuando el trabajo requiere más de una persona,
+                puedo trabajar con mi equipo.
+            </p>
+
+        </div>
+
+
+        <div class="datos">
+
+            <div class="dato">
+                <div class="icono">📍</div>
+                <strong>Zona de trabajo</strong>
+                <p>Toda Cataluña</p>
+            </div>
+
+            <div class="dato">
+                <div class="icono">🔨</div>
+                <strong>Profesión</strong>
+                <p>Instalador de pladur</p>
+            </div>
+
+            <div class="dato">
+                <div class="icono">👷</div>
+                <strong>Experiencia</strong>
+                <p>Bastante experiencia</p>
+            </div>
+
+            <div class="dato">
+                <div class="icono">💰</div>
+                <strong>Presupuesto</strong>
+                <p>Sin compromiso</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SERVICIOS -->
+
+    <section id="servicios">
+
+        <h2>🛠️ Servicios</h2>
+
+        <div class="servicios">
+
+            <div class="servicio">
+                <div class="icono">🧱</div>
+                <h3>Tabiques de pladur</h3>
+                <p>
+                    Instalación de tabiques de pladur
+                    para diferentes espacios.
+                </p>
+            </div>
+
+
+            <div class="servicio">
+                <div class="icono">🏠</div>
+                <h3>Falsos techos</h3>
+                <p>
+                    Instalación de falsos techos
+                    de pladur.
+                </p>
+            </div>
+
+
+            <div class="servicio">
+                <div class="icono">🔇</div>
+                <h3>Techos con aislamiento</h3>
+                <p>
+                    Trabajos de techos con aislamiento
+                    según las necesidades del proyecto.
+                </p>
+            </div>
+
+
+            <div class="servicio">
+                <div class="icono">🏗️</div>
+                <h3>Trasdosados</h3>
+                <p>
+                    Instalación de trasdosados
+                    de pladur.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- EQUIPO -->
+
+    <section class="equipo">
+
+        <h2>👷 Trabajo individual o con equipo</h2>
+
+        <p>
+            Puedo realizar trabajos de forma individual.
+            Si el proyecto necesita más de una persona,
+            también dispongo de un equipo para realizar
+            trabajos de mayor tamaño.
+        </p>
+
+    </section>
+
+
+    <!-- VENTAJAS -->
+
+    <section>
+
+        <h2>⭐ ¿Por qué contactar conmigo?</h2>
+
+        <div class="ventajas">
+
+            <p>✔️ Autonomo con mucha experiencia</p>
+
+            <p>✔️ Disponible en toda Cataluña</p>
+
+            <p>✔️ Trabajo solo o con equipo</p>
+
+            <p>✔️ Presupuesto sin compromiso</p>
+
+            <p>✔️ Puedo ir a buscar el material</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACTO -->
+
+    <section class="contacto" id="contacto">
+
+        <h2>¿Necesitas un instalador de pladur?</h2>
+
+        <p>
+            Contacta con Zviad para explicar tu proyecto
+            y solicitar un presupuesto sin compromiso.
+        </p>
+
+        <a
+            class="boton"
+            href="tel:+34622172808"
+        >
+            📞 Llamar
+        </a>
+
+        <a
+            class="boton"
+            href="https://wa.me/34622172808"
+            target="_blank"
+        >
+            💬 WhatsApp
+        </a>
+
+        <p style="margin-top: 30px;">
+            📍 Disponible en toda Cataluña
+        </p>
+
+    </section>
+
+
+    <!-- PIE DE PÁGINA -->
+
+    <footer>
+
+        <p>
+            © 2026 Zviad Jajanidze — Instalador de Pladur
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
